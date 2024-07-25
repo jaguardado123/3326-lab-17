@@ -83,10 +83,10 @@ Your output should look like:
 ```
 Welcome to my Product & Sum Calculator!
 
-Input two numbers: 3 5
+Input two numbers: 3.0 5.0
 
-Sum is 8
-Product is 15
+Sum is 8.0
+Product is 15.0
 ```
 
 ## Submit your assignment
