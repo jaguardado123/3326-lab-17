@@ -17,14 +17,13 @@ public class MainTest {
 		RV rv = new RV("Forest River", 2010, 20.5f);
 		assertEquals("Forest River", rv.make);
 		assertEquals(2010, rv.year);
-		assertEquals(20.5f, rv.size);
+		assertEquals(true, rv.size == 20.5f);
 	}
-
 	@Test
 	public void testing_Trailer() {
 		Trailer trailer = new Trailer("Felling", 30.2f, 9000.0f);
 		assertEquals("Felling", trailer.make);
-		assertEquals(30.2f, trailer.size);
-		assertEquals(2000, trailer.weight_capacity);
+		assertEquals(true, trailer.size == 30.2f);
+		assertEquals(true, trailer.weight_capacity == 9000.0f);
 	}
 }
