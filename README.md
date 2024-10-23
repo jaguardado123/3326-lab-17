@@ -1,4 +1,4 @@
-# Lab Assignment 14
+# Lab Assignment 17
 
 In this lab you will practice working with packages.
 
@@ -50,6 +50,8 @@ You have done this before, think back to when you first used the `Scanner` class
 
 Below is an example on how to import `Dog` and `Cat` classes into the `Owner` class in the `src` directory.
 
+For more practice with packages in Java visit https://www.w3schools.com/java/java_packages.asp and https://www.programiz.com/java-programming/packages-import.
+
 **Code Example for Owner.java:**
 
 ```java
@@ -68,25 +70,34 @@ public class Owner {
 
 ## Your Program
 
-### Product & Sum Calculator
+### Car Dealership Package
 
-For this lab assignment you will create a program to find the sum (addition) and product (multiplication) of two real numbers using packages.
+For this lab assignment, assume you are working at a car dealership that deals with not just cars, but RVs and trailers. This means we'll need to work with car, RV, and trailer objects. To keep the code organized, define the classes inside a package.
 
-Create a new folder named `tools` inside the `src` directory. Inside `tools`, create a file `MyMath.java` with class `MyMath`. Create two `static` methods `sum` and `product` to each receive two real numbers and return a single real number.
+Create classes `Car`, `RV`, and `Trailer` inside the `dealership` folder and **package** them.
 
-Remember to include the `package` keyword at the top of your file along with the parent folder's name.
+The `Car` class should have a **constructor** and the following **public** attributes:
+* make (String)
+* model (String)
+* year (int)
 
-Inside the `Main.java` file import the `MyMath` class using the `import` keyword. Prompt the user to input two real numbers then get the **product** and **sum** of both numbers by calling the methods in a `static` manner and output the result back to the user.
+The `RV` class should have a **constructor** and the following **public** attributes:
+* make (String)
+* year (int)
+* size (float)
 
-Your output should look like:
+The `Trailer` class should have a **constructor** and the following **public** attributes:
+* make (String)
+* size (float)
+* weight_capacity (float)
+
+Import the `Car`, `RV`, and `Trailer` classes inside the `Main.java` file and create an object of each.
+
+You can test your solution by running the commands below in your terminal.
 
 ```
-Welcome to my Product & Sum Calculator!
-
-Input two numbers: 3.0 5.0
-
-Sum is 8.0
-Product is 15.0
+./build.sh
+./test.sh
 ```
 
 ## Submit your assignment
