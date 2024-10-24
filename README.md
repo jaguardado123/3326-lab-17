@@ -50,8 +50,6 @@ You have done this before, think back to when you first used the `Scanner` class
 
 Below is an example on how to import `Dog` and `Cat` classes into the `Owner` class in the `src` directory.
 
-For more practice with packages in Java visit https://www.w3schools.com/java/java_packages.asp and https://www.programiz.com/java-programming/packages-import.
-
 **Code Example for Owner.java:**
 
 ```java
@@ -67,6 +65,8 @@ public class Owner {
     }
 }
 ```
+
+For more practice with packages in Java visit https://www.w3schools.com/java/java_packages.asp and https://www.programiz.com/java-programming/packages-import.
 
 ## Your Program
 
