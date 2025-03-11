@@ -93,13 +93,14 @@ The `Trailer` class should have a **constructor** and the following **public** a
 
 Import the `Car`, `RV`, and `Trailer` classes inside the `Main.java` file and create an object of each.
 
-You can test your solution by running the commands below in your terminal.
+You can test your solution by running the commans below in your terminal.
 
 ```
-./build.sh
 ./test.sh
 ```
 
 ## Submit your assignment
 
-To submit your lab assignment click on the source control icon (3 circles with 2 lines) on your leftside navbar. Next, click on the '+' symbol next to "Changes" to stage your changes. Lastly, add a commit message (ex: "First commit") and click "Commit" then "Push" or "Sync Changes". And you're done!
+[Grading Criteria](https://joselitoguardado.dev/3326/labs/Lab_17.pdf)
+
+[How to Submit Assignments to GitHub](https://joselitoguardado.dev/3326/How_to_Submit_Assignments_to_GitHub.pdf)
