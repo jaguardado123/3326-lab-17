@@ -1,12 +1,12 @@
 # Lab Assignment 17
 
-In this lab you will practice working with packages.
+In this lab you will practice working with **packages**.
 
 Unlike previous labs, your class has already been created for you. 
 
 ## Let's get started!
 
-For this lab your **main() method** is in the Main class. For this lab you must create the new classes in their packet location.
+For this lab your **main() method** is in the Main class. For this lab you must move the new classes to their designated file inside the package.
 
 Now let's begin!
 
@@ -68,30 +68,72 @@ public class Owner {
 
 For more practice with packages in Java visit https://www.w3schools.com/java/java_packages.asp and https://www.programiz.com/java-programming/packages-import.
 
+## Access Modifiers
+
+In Java, by default all classes and their members are **package-private**. This means the class and its members are only accessible within their current directory. When working with packages, it's important to know which access modifier to use.
+
+**Java Access Modifiers**
+- Package-Private
+- Public
+- Private
+- Protected
+
+For more practice with access modifiers in Java visit https://www.w3schools.com/java/java_modifiers.asp .
+
 ## Your Program
 
 ### Car Dealership Package
 
-For this lab assignment, assume you are working at a car dealership that deals with not just cars, but RVs and trailers. This means we'll need to work with car, RV, and trailer objects. To keep the code organized, define the classes inside a package.
+For this lab assignment, assume you are working with a car dealership program.
 
-Create classes `Car`, `RV`, and `Trailer` inside the `dealership` folder and **package** them.
+The program is using the following classes:
 
-The `Car` class should have a **constructor** and the following **public** attributes:
-* make (String)
-* model (String)
-* year (int)
+```java
+class Engine {
+    int cylinders;
+    int horsepower;
 
-The `RV` class should have a **constructor** and the following **public** attributes:
-* make (String)
-* year (int)
-* size (float)
+    Engine(int cyl, int hp) {
 
-The `Trailer` class should have a **constructor** and the following **public** attributes:
-* make (String)
-* size (float)
-* weight_capacity (float)
+        cylinders = cyl;
+        horsepower = hp;
+    }
+}
 
-Import the `Car`, `RV`, and `Trailer` classes inside the `Main.java` file and create an object of each.
+class Car {
+    String make;
+    String model;
+    int year;
+    Engine engine;
+
+    Car(String mk, String md, int yr, int cyl, int hp) {
+        make = mk;
+        model = md;
+        year = yr;
+        engine = new Engine(cyl, hp);
+    }
+}
+
+class Owner {
+    String name;
+    int phone_number;
+    String address;
+    Car car;
+
+    Owner(String nm, int pnum, String addr, Car cr) {
+        name = nm;
+        phone_number = pnum;
+        address = addr;
+        car = cr;
+    }
+}
+```
+
+Your assignment is to organize the code by moving the classes into their designated .java file.
+
+Use the appropriate **access modifiers** so that the code inside the Main class still works. 
+
+In addition, the `Engine` class should NOT be accessible inside the Main class.
 
 You can test your solution by running the commans below in your terminal.
 
@@ -99,8 +141,16 @@ You can test your solution by running the commans below in your terminal.
 ./test.sh
 ```
 
-## Submit your assignment
+<br>
 
-[Grading Criteria](https://joselitoguardado.dev/3326/labs/Lab_17.pdf)
+**Grading Criteria:**
+| Criteria | Points |
+|---|---|
+| Moved the **Car** class into Car.java. | 10 |
+| Moved the **Owner** class into Owner.java. | 10 |
+| Moved the **Engine** class into Engine.java. | 10 |
+| The **Owner** and **Car** class are accessible in the Main class. | 20 |
+| The **Engine** class is NOT accessible in the Main class. | 20 |
+| The code inside Main still works. | 30 |
 
 [How to Submit Assignments to GitHub](https://joselitoguardado.dev/3326/How_to_Submit_Assignments_to_GitHub.pdf)
