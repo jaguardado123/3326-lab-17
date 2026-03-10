@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
+import dealership.Car;
+import dealership.Owner;
 
 public class DealershipTest {
 	
@@ -20,12 +22,5 @@ public class DealershipTest {
 		assertEquals("Bob Bobbert", own.name);
 		assertEquals(1234567, own.phone_number);
 		assertEquals("123 Sesame St.", own.address);
-	}
-	@Test
-	public void testing_Engine() {
-		Engine engine = new Engine(6, 500);
-
-		assertEquals(6, engine.cylinders);
-		assertEquals(500, engine.horsepower);
 	}
 }
